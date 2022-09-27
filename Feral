@@ -1,0 +1,55 @@
+/cast [target=focus] cyclone
+/cast [target=focus] mighty bash
+/cast [target=focus] entangling Roots
+/cast [target=focus] wild charge
+/cast [target=focus] skull bash
+/cast [target=focus] maim
+
+
+#showtooltip skull bash 
+/stopcasting 
+/cast [stance:0] Cat Form 
+/cast [target=focus] skull bash
+
+
+#showtooltip 
+/use [@mouseover,help,nodead][help,nodead][@player] regrowth
+
+
+#showtooltip 
+/use [@mouseover,help,nodead][help,nodead][@player] remove corruption
+
+
+#showtooltip Wild Charge
+/cast [@mouseover,exists,help,stance:0] [@target,stance:0,help] Wild Charge
+/cast [stance:1/2,@mouseover,exists,harm][stance: 2,@target,exists,harm] Wild Charge
+/cast [stance:1/2/3] Wild Charge
+/cast wild charge
+
+
+#showtooltip
+/cleartarget [dead]
+/targetenemy [noharm]
+/cast Rake
+
+
+#showtooltip Incapacitating Roar
+/use Incapacitating Roar
+/stopattack
+
+
+#showtooltip convoke the spirits
+/stopmacro [channeling:Convoke the Spirits]
+/use Unchained Gladiator's Badge of Ferocity
+/use convoke the spirits
+
+
+#showtooltip shadowmeld
+/cancelaura kevin's oozeling
+/cast prowl
+/use !shadowmeld
+
+
+/cast prowl
+/cancelaura Blessing of Protection 
+/cancelaura Blessing of Freedom
